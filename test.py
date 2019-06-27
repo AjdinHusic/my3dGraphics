@@ -81,10 +81,10 @@ if __name__ == '__main__':
     kwargs['eye_pos'] = (0, 40, 0)
     kwargs['up'] = (0, 0, 1)
     kwargs['near'] = 0.15
-    kwargs['far'] = 100
+    kwargs['far'] = 5
 
     # compute for sample points
-    w_points = [(10, 10, 10), (10, -10, 10), (-10, 10, 10)]
+    w_points = [(10, 10, 10), (10, -10, 10), (-10, 10, 10), (5, 3.6, 7)]
     d_points = []
     for point in w_points:
         d = world_to_device(point, forward=True, **kwargs)
